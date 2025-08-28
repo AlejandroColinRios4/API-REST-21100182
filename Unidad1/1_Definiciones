@@ -1,0 +1,11 @@
+# Definiciones API-REST
+
+
+![Image](https://saasradar.b-cdn.net/wp-content/uploads/2022/03/api_rest.png)
+
+# **¿Que es una API?**
+Una API **(Interfaz de Programación de Aplicaciones)** es un conjunto de reglas y protocolos que permite que dos aplicaciones de software se comuniquen entre sí, **actuando como un intermediario para intercambiar datos de manera estandarizada.** Sirve para facilitar la integración y el desarrollo de aplicaciones, **permitiendo a un programa usar funcionalidades de otro sin necesidad de conocer sus detalles internos,** agilizar el desarrollo, automatizar procesos y ofrecer nuevas oportunidades de innovación y colaboración. 
+
+
+# **¿Que es REST?**
+REST es una **interfaz para conectar varios sistemas basados en el protocolo HTTP** (uno de los protocolos más antiguos) y nos sirve para obtener y generar datos y operaciones, devolviendo esos datos en formatos muy específicos, como XML y JSON.
