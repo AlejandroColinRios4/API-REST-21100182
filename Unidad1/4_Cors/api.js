@@ -8,7 +8,7 @@ const morgan = require('morgan')
 const port = 3000;
 const cliente = require('./router/cliente')
 const proveedores = require('./router/cliente')
-
+ 
 
 app.use(express.json());
 app.use(cors());
