@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>Petición a Clientes</h1>
+        <button id="peticionBtn">Hacer Petición POST a /Clientes</button>
+        <div id="respuesta"></div>
+
+        <script>
+            document.getElementById('peticionBtn').addEventListener('click', async () => {
+                try {
+                    const response = await fetch('http://localhost:3000/Clientes', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({})
+                    });
+                    const data = await response.text();
+                    document.getElementById('respuesta').innerText = 'Respuesta: ' + data;
+                } catch (error) {
+                    document.getElementById('respuesta').innerText = 'Error: ' + error.message;
+                }
+            });
+        </script>
+    </body>
+</html>
