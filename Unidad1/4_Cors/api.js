@@ -14,8 +14,8 @@ app.use(express.json());
 app.use(cors());
 
 //Middleware Morgan para guardar logs en archivo
-//var accessLogStream = fs.createWriteStream(__dirname + 'access.log',{flags: 'a'})
-//app.use(morgan('combined',{stream: accessLogStream}))
+var accessLogStream = fs.createWriteStream(__dirname + 'access.log',{flags: 'a'})
+app.use(morgan('combined',{stream: accessLogStream}))
 
 //Middleware morgan logs en consola
 app.use(morgan('combined'));
